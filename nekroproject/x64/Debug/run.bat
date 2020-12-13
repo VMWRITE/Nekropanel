@@ -1,0 +1,1 @@
+"c:/program files (x86)/steam/steam.exe" -login log pass -silent -applaunch 730 -language english -sw -w 640 -h 480
