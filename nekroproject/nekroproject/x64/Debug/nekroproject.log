@@ -1,12 +1,13 @@
 ﻿  nekroproject.cpp
+C:\Users\coldc\OneDrive\Документы\GitHub\Nekropanel\nekroproject\nekroproject\nekroproject.cpp(1,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+C:\Users\coldc\OneDrive\Документы\GitHub\Nekropanel\nekroproject\nekroproject\nekroproject.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(132,1): warning C4005: PASCAL: изменение макроопределения
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\Lmcons.h(45): message : см. предыдущее определение "PASCAL"
-C:\Users\coldc\source\repos\nekroproject\nekroproject\sha512.h(25,25): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\coldc\source\repos\nekroproject\nekroproject\sha512.h(27,25): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\coldc\source\repos\nekroproject\nekroproject\sha512.h(40,25): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\coldc\source\repos\nekroproject\nekroproject\sha512.h(40,46): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\coldc\source\repos\nekroproject\nekroproject\sha512.h(40,51): warning C4101: j: неиспользованная локальная переменная
-C:\Users\coldc\source\repos\nekroproject\nekroproject\sha512.h(62,34): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-  The contents of <filesystem> are available only with C++17 or later.
-C:\Users\coldc\source\repos\nekroproject\nekroproject\nekroproject.cpp(403,15): warning C4244: инициализация: преобразование "DWORD" в "char", возможна потеря данных
-  nekroproject.vcxproj -> C:\Users\coldc\source\repos\nekroproject\x64\Debug\nekroproject.exe
+C:\Users\coldc\OneDrive\Документы\GitHub\Nekropanel\nekroproject\nekroproject\sha512.h(25,25): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\coldc\OneDrive\Документы\GitHub\Nekropanel\nekroproject\nekroproject\sha512.h(27,25): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\coldc\OneDrive\Документы\GitHub\Nekropanel\nekroproject\nekroproject\sha512.h(40,25): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\coldc\OneDrive\Документы\GitHub\Nekropanel\nekroproject\nekroproject\sha512.h(40,46): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\coldc\OneDrive\Документы\GitHub\Nekropanel\nekroproject\nekroproject\sha512.h(40,51): warning C4101: j: неиспользованная локальная переменная
+C:\Users\coldc\OneDrive\Документы\GitHub\Nekropanel\nekroproject\nekroproject\sha512.h(62,34): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\coldc\OneDrive\Документы\GitHub\Nekropanel\nekroproject\nekroproject\nekroproject.cpp(145,14): warning C4101: hKey: неиспользованная локальная переменная
+  nekroproject.vcxproj -> C:\Users\coldc\OneDrive\Документы\GitHub\Nekropanel\nekroproject\x64\Debug\nekroproject.exe

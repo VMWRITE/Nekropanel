@@ -1,28 +1,21 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 
 #include <Lmcons.h>
-
 #include <iostream>
-
 #include <windows.h>
-
 #include <string>
-
 #include <fstream>
-
 #include <sstream>
-
 #include <io.h>
-
 #include <vector>
-
 #include "ConsoleColor.h"
-
 #include "sha512.h"
 
 using namespace std;
 
 string path = getenv("TEMP");
+LPCSTR registryfolder = "SOFTWARE\\Nekro\\License";
+LPCSTR registrykey = "lKey";
 
 std::vector < std::string > explode(std::string
     const& s, char delim) {
@@ -34,11 +27,6 @@ std::vector < std::string > explode(std::string
     }
 
     return result;
-}
-
-void nekrologsucc(std::string log, std::string secmsg) {
-    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    std::cout << cyan << "[+] " << grey << log << darkred << secmsg << white << std::endl;
 }
 
 void nekrocin(std::string msg) {
@@ -157,7 +145,7 @@ bool checkLicense(string argv) {
         HKEY hKey;
 
         LPCTSTR newkey = cs2wchar(encrypt_vigenere(crypting, keycrypt).c_str());
-        SetRegValue(HKEY_CURRENT_USER, "SOFTWARE\\Nekro\\License", L"lKey", newkey);
+        SetRegValue(HKEY_CURRENT_USER, registryfolder, (LPCWSTR)registrykey, newkey);
         return true;
     }
     else {
@@ -182,7 +170,7 @@ void cmdlist() {
         cout << blue << "[NEKRO] " << white << str[i] << endl;
 }
 
-int nekroclearprefetch() {
+void nekroclearprefetch() {
     WIN32_FIND_DATAA data;
     HANDLE hFind = FindFirstFileA("C:/Windows/Prefetch/*.pf", &data); // DIRECTORY
 
@@ -201,7 +189,7 @@ int nekroclearprefetch() {
     }
 }
 
-int getAccounts() {
+void getAccounts() {
     if (nekroexistsex("nekro.dat")) {
         cout << "--------------------------ACCOUNT LIST--------------------------" << endl;
         cout << "UID | LOGIN | PASS" << endl;
@@ -409,9 +397,9 @@ int main() {
     cout << cyan << "[HWID] " << white << "Your HardwareID - " << myhwid << white << endl;
 
     string crypting2 = keys + hwid;
-    string lKey = GetRegValue(HKEY_CURRENT_USER, "SOFTWARE\\Nekro\\License", "lKey");
+    string lKey = GetRegValue(HKEY_CURRENT_USER, registryfolder, registrykey);
     if (strcmp(lKey.c_str(), encrypt_vigenere(crypting2, keycrypt).c_str()) == 0) {
-        nekrologsucc("Authorized with registry", "");
+        std::cout << cyan << "[+] " << grey << "Authorized with registry" << white << std::endl;
         start();
     }
     else {
