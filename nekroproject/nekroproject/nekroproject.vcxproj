@@ -144,6 +144,7 @@
     <ClCompile Include="nekroproject.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ConsoleColor.h" />
     <ClInclude Include="sha512.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
