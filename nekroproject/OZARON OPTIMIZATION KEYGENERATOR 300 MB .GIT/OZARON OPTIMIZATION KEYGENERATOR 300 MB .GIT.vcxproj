@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{d9153feb-adca-4490-be4d-9a8c29d27f60}</ProjectGuid>
-    <RootNamespace>GetMyKeyPLS</RootNamespace>
+    <ProjectGuid>{0b7c0f26-34b9-4381-acc8-4e1339c88eed}</ProjectGuid>
+    <RootNamespace>OZARONOPTIMIZATIONKEYGENERATOR300MBGIT</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,10 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="GetMyKeyPLS.cpp" />
+    <ClCompile Include="src\GetMyKeyPLS.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="crypt.h" />
+    <ClInclude Include="include\crypt.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

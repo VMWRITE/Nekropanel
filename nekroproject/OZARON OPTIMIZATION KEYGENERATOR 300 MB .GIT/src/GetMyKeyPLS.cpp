@@ -6,8 +6,6 @@
 
 #include <string>
 
-#include <iostream>
-
 #include <filesystem>
 
 #include <tlhelp32.h>
@@ -20,7 +18,7 @@
 
 #include <io.h>
 
-#include "crypt.h"
+#include "..\include\crypt.h"
 
 
 #define UNLEN 256

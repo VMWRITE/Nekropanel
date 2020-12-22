@@ -8,8 +8,8 @@
 #include <sstream>
 #include <io.h>
 #include <vector>
-#include "ConsoleColor.h"
-#include "sha512.h"
+#include "..\include\ConsoleColor.h"
+#include "..\include\sha512.h"
 
 using namespace std;
 

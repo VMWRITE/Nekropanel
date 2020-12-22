@@ -1,8 +1,0 @@
-﻿  nekroproject.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(132,1): warning C4005: PASCAL: изменение макроопределения
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\Lmcons.h(45): message : см. предыдущее определение "PASCAL"
-C:\Users\coldc\source\repos\nekroproject\nekroproject\sha512.h(13,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\coldc\source\repos\nekroproject\nekroproject\sha512.h(40,51): warning C4101: j: неиспользованная локальная переменная
-  The contents of <filesystem> are available only with C++17 or later.
-C:\Users\coldc\source\repos\nekroproject\nekroproject\nekroproject.cpp(21,12): error C4996: 'access': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _access. See online help for details.
-C:\Users\coldc\source\repos\nekroproject\nekroproject\nekroproject.cpp(119,15): warning C4244: инициализация: преобразование "DWORD" в "char", возможна потеря данных

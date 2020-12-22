@@ -18,6 +18,16 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\nekroproject.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ConsoleColor.h" />
+    <ClInclude Include="include\nekromsg.h" />
+    <ClInclude Include="include\nekropc.h" />
+    <ClInclude Include="include\nekroreg.h" />
+    <ClInclude Include="include\sha512.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -140,13 +150,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="nekroproject.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="ConsoleColor.h" />
-    <ClInclude Include="sha512.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
