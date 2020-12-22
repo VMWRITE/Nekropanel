@@ -107,21 +107,19 @@ string GetRegValue(HKEY where, LPCSTR reg, LPCSTR value) {
     char Reget[1024];
     DWORD RegetPath = 1024;
     RegOpenKeyExA(HKEY_CURRENT_USER, reg, 0, KEY_QUERY_VALUE, &rKey);
-    RegQueryValueExA(rKey, value, NULL, NULL, (LPBYTE)Reget, &RegetPath);
+    RegQueryValueExA(rKey, (LPCSTR)value, NULL, NULL, (LPBYTE)Reget, &RegetPath);
     RegCloseKey(rKey);
     return Reget;
 }
 
-void SetRegValue(HKEY where, LPCSTR reg, LPCWSTR key, LPCTSTR regval) {
+void SetRegValue(HKEY where, LPCSTR reg, LPCSTR key, std::string regval) {
     HKEY hKey;
     if (RegCreateKeyExA(where, reg, 0, 0, REG_OPTION_NON_VOLATILE, KEY_ALL_ACCESS, NULL, &hKey, NULL)) {
         MessageBoxA(0, "Can't create RegKey", "RegKey!", MB_OK);
     }
-
     RegOpenKeyExA(where, reg, 0,
         KEY_ALL_ACCESS, &hKey);
-    cout << regval << endl;
-    if (RegSetValueEx(hKey, key, 0, REG_SZ, (LPBYTE)regval, 1024) != ERROR_SUCCESS) {
+    if (RegSetValueExA(hKey, key, 0, REG_SZ, (LPBYTE)regval.c_str(), 1024) != ERROR_SUCCESS) {
         MessageBoxA(0, "Can't set Reg value", "RegKey!", MB_OK);
     }
 }
@@ -144,8 +142,9 @@ bool checkLicense(string argv) {
         MessageBoxA(0, "Your license has activated!", "[NEKRO]", MB_ICONINFORMATION);
         HKEY hKey;
 
-        LPCTSTR newkey = cs2wchar(encrypt_vigenere(crypting, keycrypt).c_str());
-        SetRegValue(HKEY_CURRENT_USER, registryfolder, (LPCWSTR)registrykey, newkey);
+        std::string newkey = encrypt_vigenere(crypting, keycrypt);
+
+        SetRegValue(HKEY_CURRENT_USER, registryfolder, registrykey, newkey);
         return true;
     }
     else {

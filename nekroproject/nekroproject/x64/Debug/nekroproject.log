@@ -9,5 +9,5 @@ C:\Users\coldc\OneDrive\Документы\GitHub\Nekropanel\nekroproject\nekrop
 C:\Users\coldc\OneDrive\Документы\GitHub\Nekropanel\nekroproject\nekroproject\sha512.h(40,46): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
 C:\Users\coldc\OneDrive\Документы\GitHub\Nekropanel\nekroproject\nekroproject\sha512.h(40,51): warning C4101: j: неиспользованная локальная переменная
 C:\Users\coldc\OneDrive\Документы\GitHub\Nekropanel\nekroproject\nekroproject\sha512.h(62,34): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\coldc\OneDrive\Документы\GitHub\Nekropanel\nekroproject\nekroproject\nekroproject.cpp(145,14): warning C4101: hKey: неиспользованная локальная переменная
-  nekroproject.vcxproj -> C:\Users\coldc\OneDrive\Документы\GitHub\Nekropanel\nekroproject\x64\Debug\nekroproject.exe
+C:\Users\coldc\OneDrive\Документы\GitHub\Nekropanel\nekroproject\nekroproject\nekroproject.cpp(18,34): error C2228: выражение слева от ".c_str" должно представлять класс, структуру или объединение
+C:\Users\coldc\OneDrive\Документы\GitHub\Nekropanel\nekroproject\nekroproject\nekroproject.cpp(18,34): message : тип: const char [5]
