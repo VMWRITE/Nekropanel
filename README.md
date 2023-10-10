@@ -6,7 +6,7 @@ Our discord [Clickable](https://discord.gg/3cSp2Zt2C6)
 
 ## 🌌 What kind of project is this?
 - This is a program for boosting your gaming accounts
-
+2
 
 ###### Please note what this program is my hobby and I will continue to do so until I am tired of it
 	
