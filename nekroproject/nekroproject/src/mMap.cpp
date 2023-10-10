@@ -1,6 +1,7 @@
 #include "..\include\mMap.h"
 #include <conio.h>
 
+int ebanat = 1;
 
 mMap::mMap(char* name) :
     hProcess(0),
