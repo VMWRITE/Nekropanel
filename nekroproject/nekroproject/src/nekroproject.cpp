@@ -12,7 +12,7 @@
 #include "..\include\sha512.h"
 
 using namespace std;
-
+int i = 0;
 string path = getenv("TEMP");
 LPCSTR registryfolder = "SOFTWARE\\Nekro\\License";
 LPCSTR registrykey = "lKey";
