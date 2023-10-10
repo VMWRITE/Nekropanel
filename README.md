@@ -1,5 +1,5 @@
 # 👾 NEKRO
-
+3
 >🎮 Convenient and incredibly easy to use method of boosting in your favorite game
 
 Our discord [Clickable](https://discord.gg/3cSp2Zt2C6)
