@@ -1,12 +1,10 @@
 # 👾 NEKRO
-2
 >🎮 Convenient and incredibly easy to use method of boosting in your favorite game
 
 Our discord [Clickable](https://discord.gg/3cSp2Zt2C6)
 
 ## 🌌 What kind of project is this?
 - This is a program for boosting your gaming accounts
-23
 
 ###### Please note what this program is my hobby and I will continue to do so until I am tired of it
 	
