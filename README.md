@@ -1,3 +1,6 @@
+# First code. I don't wanna comment this shit. Never download it please, I apologize to everyone
+
+
 # 👾 NEKRO
 >🎮 Convenient and incredibly easy to use method of boosting in your favorite game
 
